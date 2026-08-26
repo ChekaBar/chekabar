@@ -190,56 +190,58 @@ const CHEKA = {
   ],
 
   /* ------------------------------------------------------------------ */
-  /* 6. MENU                                                          */
+  /* 6. MENU  (Albanian · prices in Albanian lek — format: "150 Lek")   */
   /*    TODO CHEKA: replace names / descriptions / prices with the     */
-  /*    real menu. Keep prices as strings so any currency format works.*/
+  /*    real menu. Keep prices as strings, always ending in " Lek"     */
+  /*    (e.g. "250 Lek", "1,000 Lek"). Never use ALL / LEK / L / €.    */
   /*    Add or remove items freely — the page rebuilds automatically.  */
   /* ------------------------------------------------------------------ */
   menu: {
+    // Kafe
     coffee: [
-      { name: "Espresso",    description: "Rich, balanced and aromatic.",              price: "€1.50" },
-      { name: "Americano",   description: "Espresso lengthened with hot water.",       price: "€2.00" },
-      { name: "Cappuccino",  description: "Espresso, steamed milk, velvet foam.",      price: "€2.50" },
-      { name: "Latte",       description: "Smooth and milky, gently sweet.",           price: "€2.70" },
-      { name: "Flat White",  description: "Double ristretto, silky microfoam.",        price: "€2.80" },
-      { name: "Mocha",       description: "Espresso, dark chocolate, steamed milk.",   price: "€3.00" },
-      { name: "Macchiato",   description: "Espresso marked with a touch of foam.",     price: "€1.80" },
+      { name: "Espresso",    description: "I fortë, i ekuilibruar dhe aromatik.",           price: "150 Lek" },
+      { name: "Americano",   description: "Espresso i zgjatur me ujë të nxehtë.",           price: "200 Lek" },
+      { name: "Cappuccino",  description: "Espresso, qumësht i avulluar, shkumë kadifeje.", price: "250 Lek" },
+      { name: "Latte",       description: "I butë dhe me shumë qumësht, lehtësisht i ëmbël.", price: "270 Lek" },
+      { name: "Flat White",  description: "Ristretto i dyfishtë, mikroshkumë si mëndafsh.", price: "280 Lek" },
+      { name: "Mocha",       description: "Espresso, çokollatë e zezë, qumësht i avulluar.", price: "300 Lek" },
+      { name: "Macchiato",   description: "Espresso i shënuar me pak shkumë.",              price: "180 Lek" },
     ],
-    // TODO CHEKA: realistic placeholders — replace with the real drinks list.
+    // Pije — TODO CHEKA: shembuj realistë, zëvendësojini me listën e vërtetë të pijeve.
     drinks: [
-      { name: "Fresh Orange Juice",  description: "Cold-pressed, nothing added.",           price: "€3.20" },
-      { name: "Iced Matcha",         description: "Stone-ground green tea over ice.",        price: "€3.50" },
-      { name: "Herbal Infusion",     description: "Seasonal leaves and botanicals.",        price: "€2.60" },
-      { name: "Sparkling Lemonade",  description: "House-made, lightly sweet.",             price: "€3.00" },
-      { name: "Craft Beer",          description: "Local, rotating selection.",             price: "€4.00" },
-      { name: "Glass of Wine",       description: "Red, white or rosé — ask our team.",     price: "€4.50" },
-      { name: "Aperitivo Spritz",    description: "Bittersweet, orange, prosecco.",         price: "€5.50" },
+      { name: "Lëng portokalli i freskët", description: "I shtrydhur ftohtë, pa shtesa.",           price: "320 Lek" },
+      { name: "Matcha me akull",           description: "Çaj jeshil i bluar në gur, mbi akull.",    price: "350 Lek" },
+      { name: "Infuzion bimor",            description: "Gjethe dhe bimë sipas stinës.",            price: "260 Lek" },
+      { name: "Limonadë e gazuar",         description: "E bërë në shtëpi, lehtësisht e ëmbël.",    price: "300 Lek" },
+      { name: "Birrë artizanale",          description: "Përzgjedhje vendore që ndryshon.",         price: "400 Lek" },
+      { name: "Gotë vere",                 description: "E kuqe, e bardhë ose rozé — pyesni stafin tonë.", price: "450 Lek" },
+      { name: "Aperitivo Spritz",          description: "I hidhur-ëmbël, portokall, prosecco.",     price: "550 Lek" },
     ],
-    // TODO CHEKA: realistic placeholders — replace with the real food list.
+    // Ushqime — TODO CHEKA: shembuj realistë, zëvendësojini me listën e vërtetë të ushqimeve.
     food: [
-      { name: "Butter Croissant",    description: "Baked fresh each morning.",              price: "€1.80" },
-      { name: "Avocado Toast",       description: "Sourdough, lemon, chilli, herbs.",       price: "€5.50" },
-      { name: "Cheese & Ham Toastie",description: "Pressed, golden, comforting.",           price: "€4.80" },
-      { name: "Garden Bowl",         description: "Leaves, grains, seeds, olive oil.",      price: "€6.90" },
-      { name: "Soup of the Day",     description: "Served with warm bread.",                price: "€4.50" },
-      { name: "Charcuterie Board",   description: "Cured meats, cheese, pickles.",          price: "€9.50" },
+      { name: "Kroasan me gjalpë",          description: "I pjekur i freskët çdo mëngjes.",             price: "180 Lek" },
+      { name: "Toast me avokado",           description: "Bukë e thartuar, limon, spec djegës, erëza aromatike.", price: "550 Lek" },
+      { name: "Toast me djathë dhe proshutë",description: "I shtypur, i artë, që të ngroh.",            price: "480 Lek" },
+      { name: "Sallatë kopshti",            description: "Gjethe, drithëra, fara dhe vaj ulliri.",      price: "690 Lek" },
+      { name: "Supa e ditës",               description: "Shërbehet me bukë të ngrohtë.",               price: "450 Lek" },
+      { name: "Pjatë me sallam e djathë",   description: "Mishra të kuruar, djathë dhe turshi.",        price: "950 Lek" },
     ],
-    // TODO CHEKA: realistic placeholders — replace with the real dessert list.
+    // Ëmbëlsira — TODO CHEKA: shembuj realistë, zëvendësojini me listën e vërtetë të ëmbëlsirave.
     desserts: [
-      { name: "Cheesecake",          description: "Baked, vanilla, berry compote.",        price: "€3.80" },
-      { name: "Chocolate Tart",      description: "Dark ganache, sea salt.",                price: "€3.90" },
-      { name: "Carrot Cake",         description: "Spiced sponge, cream cheese.",           price: "€3.60" },
-      { name: "Seasonal Fruit Crumble",description: "Warm, with oat topping.",             price: "€4.20" },
-      { name: "Affogato",            description: "Vanilla ice cream, hot espresso.",       price: "€3.50" },
+      { name: "Cheesecake",              description: "E pjekur, vanilje, komposto manaferrash.",     price: "380 Lek" },
+      { name: "Tartë me çokollatë",      description: "Ganash i zi, kripë deti.",                     price: "390 Lek" },
+      { name: "Tortë me karrota",        description: "Brumë me erëza, krem djathi.",                 price: "360 Lek" },
+      { name: "Crumble me fruta stine",  description: "E ngrohtë, me tërshërë të thërrmuar sipër.",   price: "420 Lek" },
+      { name: "Affogato",               description: "Akullore vanilje, espresso e nxehtë.",          price: "350 Lek" },
     ],
   },
 
-  /* Per-category tab label + side image. */
+  /* Per-category tab label (Albanian) + side image. */
   menuMeta: {
-    coffee:   { label: "Coffee",   imageKey: "menuCoffee" },
-    drinks:   { label: "Drinks",   imageKey: "menuDrinks" },
-    food:     { label: "Food",     imageKey: "menuFood" },
-    desserts: { label: "Desserts", imageKey: "menuDesserts" },
+    coffee:   { label: "Kafe",      imageKey: "menuCoffee" },
+    drinks:   { label: "Pije",      imageKey: "menuDrinks" },
+    food:     { label: "Ushqime",   imageKey: "menuFood" },
+    desserts: { label: "Ëmbëlsira", imageKey: "menuDesserts" },
   },
 
   /* ------------------------------------------------------------------ */

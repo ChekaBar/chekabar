@@ -380,7 +380,7 @@
       });
       if (focusTab) tabs[index].focus();
       updatePhoto(keys[index]);
-      announce((tabs[index].textContent || "") + " menu shown");
+      announce("U zgjodh kategoria: " + (tabs[index].textContent || ""));
     }
 
     function updatePhoto(key) {
@@ -388,7 +388,7 @@
       var m = meta[key];
       var imgKey = m && m.imageKey;
       var src = imgKey && DATA.images ? DATA.images[imgKey] : null;
-      if (src) { aside.src = src; aside.alt = "Cheka " + ((m && m.label) || key).toLowerCase(); }
+      if (src) { aside.src = src; aside.alt = "Cheka — " + ((m && m.label) || key); }
       if (caption) caption.textContent = (m && m.label) || key;
     }
 
