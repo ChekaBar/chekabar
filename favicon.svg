@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Cheka">
+  <rect width="64" height="64" rx="14" fill="#1B3523"/>
+  <g fill="none" stroke="#C49A5A" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M16 26 h26 v12 a13 13 0 0 1 -13 13 a13 13 0 0 1 -13 -13 Z"/>
+    <path d="M42 30 h5 a7 7 0 0 1 0 14 h-3"/>
+  </g>
+  <path d="M32 10 c 7 4 7 12 0 18 c -7 -6 -7 -14 0 -18 Z" fill="#7E963F"/>
+  <path d="M32 18 v9" stroke="#1B3523" stroke-width="2" stroke-linecap="round"/>
+</svg>

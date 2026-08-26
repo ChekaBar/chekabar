@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#1B3523" />
+
+  <!-- ===================== SEO / SOCIAL ============================ -->
+  <title>Luggage Storage at Cheka — Secure Bag Storage | Cheka Bar Café</title>
+  <meta name="description" content="Secure, staffed luggage storage inside Cheka Bar Café. Drop off your bags, explore the city, and pick them up during opening hours. Travel light. Enjoy more." />
+
+  <!-- TODO CHEKA: set the final domain, then update these two lines -->
+  <link rel="canonical" href="https://example.github.io/cheka-website/luggage-storage.html" />
+  <meta property="og:url" content="https://example.github.io/cheka-website/luggage-storage.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Cheka Bar Café" />
+  <meta property="og:title" content="Luggage Storage at Cheka — Secure Bag Storage" />
+  <meta property="og:description" content="Leave your luggage with us in a safe, welcoming environment while you explore." />
+  <!-- TODO CHEKA: replace with a real 1200x630 photo -->
+  <meta property="og:image" content="images/og-image.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- ===================== STRUCTURED DATA (Service) =============== -->
+  <!-- TODO CHEKA: replace "REPLACE_" values with real details. No fake ratings. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Luggage Storage",
+    "name": "Luggage Storage at Cheka Bar Café",
+    "description": "Secure, staffed luggage storage inside Cheka Bar Café. Drop off and pick up during opening hours.",
+    "provider": {
+      "@type": "CafeOrCoffeeShop",
+      "name": "Cheka Bar Café",
+      "url": "https://example.github.io/cheka-website/",
+      "telephone": "REPLACE_PHONE_E164",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "REPLACE_STREET",
+        "addressLocality": "REPLACE_CITY",
+        "addressCountry": "REPLACE_COUNTRY"
+      }
+    },
+    "areaServed": "REPLACE_CITY",
+    "hoursAvailable": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "07:00",
+      "closes": "23:00"
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============================================================ -->
+  <!-- HEADER (shared design; links point back to the homepage)     -->
+  <!-- ============================================================ -->
+  <header class="site-header" id="top">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html" aria-label="Cheka — Bar Café — Luggage Storage, homepage">
+        <img class="brand__img" data-logo alt="Cheka — Bar Café — Luggage Storage"
+             src="images/logo/cheka-logo.svg" width="360" height="150" />
+        <span class="brand__fallback" aria-hidden="true">
+          <span class="l1">Cheka</span>
+          <span class="l2">BAR • CAFÉ</span>
+          <span class="l3">LUGGAGE STORAGE</span>
+        </span>
+      </a>
+
+      <nav class="primary-nav" aria-label="Primary">
+        <ul class="primary-nav__list">
+          <li><a class="primary-nav__link" href="index.html#home">Home</a></li>
+          <li><a class="primary-nav__link" href="index.html#menu">Menu</a></li>
+          <li><a class="primary-nav__link" href="index.html#about">About Us</a></li>
+          <li><a class="primary-nav__link" href="index.html#gallery">Gallery</a></li>
+          <li><a class="primary-nav__link" href="luggage-storage.html" aria-current="page">Luggage Storage</a></li>
+          <li><a class="primary-nav__link" href="index.html#contact">Contact</a></li>
+        </ul>
+        <a class="btn btn--gold" href="index.html#contact">Reserve a Table</a>
+      </nav>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+    <button class="mobile-nav__close" type="button" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <nav aria-label="Mobile primary">
+      <ul class="mobile-nav__list">
+        <li><a class="mobile-nav__link" href="index.html#home">Home</a></li>
+        <li><a class="mobile-nav__link" href="index.html#menu">Menu</a></li>
+        <li><a class="mobile-nav__link" href="index.html#about">About Us</a></li>
+        <li><a class="mobile-nav__link" href="index.html#gallery">Gallery</a></li>
+        <li><a class="mobile-nav__link" href="luggage-storage.html" aria-current="page">Luggage Storage</a></li>
+        <li><a class="mobile-nav__link" href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-nav__cta">
+      <a class="btn btn--gold" href="index.html#contact">Reserve a Table</a>
+    </div>
+    <p class="mobile-nav__meta" data-field="hours-short">Mon–Sun · 07:00 – 23:00</p>
+  </div>
+
+  <div id="sr-status" class="visually-hidden" role="status" aria-live="polite"></div>
+
+  <main id="main">
+
+    <!-- ========================================================== -->
+    <!-- COMPACT HERO                                                -->
+    <!-- ========================================================== -->
+    <section class="subhero">
+      <img class="subhero__img" data-img="luggageHero" src="images/luggage/luggage-hero.svg"
+           alt="A calm storage corner inside Cheka, forest green with natural wood"
+           width="1920" height="1000" fetchpriority="high" decoding="async" />
+      <div class="subhero__overlay"></div>
+      <div class="subhero__inner">
+        <p class="breadcrumb"><a href="index.html">Cheka</a> &nbsp;/&nbsp; Luggage Storage</p>
+        <h1 class="subhero__title reveal">Travel light. Enjoy more.</h1>
+        <p class="lead reveal" style="color:rgba(241,231,210,0.9);max-width:52ch">
+          Leave your luggage with us in a safe and welcoming environment while you explore the city or relax at Cheka Bar Café.
+        </p>
+        <div class="btn-row reveal">
+          <a class="btn btn--gold" href="#how-it-works">How It Works</a>
+          <a class="btn btn--ghost" href="#luggage-contact" data-action="luggage-directions"><span>Get Directions</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- WHAT THE SERVICE IS                                         -->
+    <!-- ========================================================== -->
+    <section class="section" id="about-service">
+      <div class="container">
+        <div class="split">
+          <div class="split__media reveal">
+            <img data-img="luggageSection" src="images/luggage/luggage-storage.svg"
+                 alt="Tagged luggage stored neatly inside Cheka" width="1600" height="1200" loading="lazy" decoding="async" />
+          </div>
+          <div class="reveal">
+            <p class="eyebrow">The Service</p>
+            <h2>Hands free, mind at ease.</h2>
+            <p class="lead">Whether you have arrived early, checked out late, or just want a day without a suitcase, you can leave your bags at Cheka and pick them up when it suits you.</p>
+            <p>Every item is tagged when you drop it off and matched to you at pick-up. Bags stay inside the café in a supervised area — not on the pavement — with our team close by throughout opening hours.</p>
+            <ul class="luggage-features" data-luggage-features aria-label="Why store with Cheka" style="margin-top:1.5rem"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- THREE-STEP PROCESS                                          -->
+    <!-- ========================================================== -->
+    <section class="section section--alt" id="how-it-works">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <p class="eyebrow">Simple</p>
+          <h2>How it works</h2>
+          <p>Three steps, no app, no queue.</p>
+        </div>
+        <div class="steps reveal" data-luggage-steps>
+          <!-- Built from js/data.js -> CHEKA.luggage.steps. Static fallback: -->
+          <noscript>
+            <div class="step"><h3>Drop off</h3><p>Bring your luggage to Cheka.</p></div>
+            <div class="step"><h3>Enjoy your time</h3><p>Explore or relax without carrying your bags.</p></div>
+            <div class="step"><h3>Pick up</h3><p>Return during opening hours and collect your luggage.</p></div>
+          </noscript>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- PRICING · SECURITY · HOURS · DROP-OFF                       -->
+    <!-- ========================================================== -->
+    <section class="section" id="details">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Good to Know</p>
+          <h2>Pricing, security &amp; hours</h2>
+          <p>Some details are still being finalised and are clearly marked below.</p>
+        </div>
+
+        <div class="info-cards info-cards--3 reveal">
+          <div class="info-card">
+            <h3>Price</h3>
+            <!-- TODO CHEKA: set the real price in js/data.js -> luggage.pricePerBag -->
+            <p class="pending" data-luggage="price">Price information coming soon</p>
+          </div>
+          <div class="info-card">
+            <h3>Opening hours</h3>
+            <!-- TODO CHEKA: confirm luggage-desk hours in js/data.js -> luggage.openingHours -->
+            <p data-luggage="hours">Every day · 07:00 – 23:00</p>
+          </div>
+          <div class="info-card">
+            <h3>Maximum storage duration</h3>
+            <!-- TODO CHEKA: js/data.js -> luggage.maxDuration -->
+            <p class="pending" data-luggage="duration">Maximum storage duration — coming soon</p>
+          </div>
+          <div class="info-card">
+            <h3>Booking method</h3>
+            <!-- TODO CHEKA: js/data.js -> luggage.bookingMethod -->
+            <p data-luggage="booking">No booking needed — walk in during opening hours.</p>
+          </div>
+          <div class="info-card">
+            <h3>Where to find us</h3>
+            <!-- TODO CHEKA: js/data.js -> luggage.location -->
+            <p data-luggage="location">Inside Cheka Bar Café — full address coming soon</p>
+          </div>
+          <div class="info-card">
+            <h3>What you can store</h3>
+            <p>Suitcases, backpacks, duffel bags and shopping bags. Please keep valuables, documents and medication with you.</p>
+          </div>
+        </div>
+
+        <div class="split split--reverse reveal" style="margin-top:4rem">
+          <div class="split__media">
+            <img data-img="luggageHero" src="images/luggage/luggage-hero.svg"
+                 alt="The supervised storage area at Cheka" width="1920" height="1000" loading="lazy" decoding="async" />
+          </div>
+          <div>
+            <p class="eyebrow">Security</p>
+            <h2>Your bags, looked after.</h2>
+            <ul class="luggage-features" data-luggage-security aria-label="Security measures"></ul>
+            <p style="margin-top:1.25rem">Drop-off and pick-up both happen at the bar. Bring the tag you were given — it is matched to your bag before it is handed back.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- FAQ ACCORDION                                               -->
+    <!-- ========================================================== -->
+    <section class="section section--alt" id="faq-section">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <p class="eyebrow">Questions</p>
+          <h2>Frequently asked questions</h2>
+        </div>
+        <!-- Accordion is built from js/data.js -> CHEKA.luggageFaqs and enhanced
+             by js/script.js. Without JavaScript, all answers remain visible. -->
+        <div class="faq reveal" id="faq"></div>
+        <noscript>
+          <p style="margin-top:1.5rem">JavaScript is off — here are the answers in full:</p>
+        </noscript>
+      </div>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- DIRECTIONS + CALL CTA                                       -->
+    <!-- ========================================================== -->
+    <section class="section" id="luggage-contact">
+      <div class="container">
+        <div class="cta-band reveal">
+          <p class="eyebrow" style="justify-content:center">Come By</p>
+          <h2 style="color:var(--text-light)">Ready when you are</h2>
+          <p style="margin-inline:auto;color:rgba(241,231,210,0.88)">
+            Drop your bags with us and get on with your day. Directions and phone details appear here once confirmed.
+          </p>
+          <div class="btn-row">
+            <a class="btn btn--gold" href="#" data-action="luggage-directions"><span>Get Directions</span></a>
+            <a class="btn btn--ghost" href="#" data-action="luggage-call"><span>Call Us</span></a>
+            <a class="btn btn--ghost" href="index.html"><span>Back to Café</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================ -->
+  <!-- FOOTER (shared)                                               -->
+  <!-- ============================================================ -->
+  <footer class="site-footer">
+    <div class="container container--wide">
+      <div class="site-footer__grid">
+        <div class="footer-brand">
+          <img class="footer-brand__img" data-logo src="images/logo/cheka-logo.svg"
+               alt="Cheka — Bar Café — Luggage Storage" width="360" height="150" />
+          <span class="brand__fallback footer-brand__fallback" aria-hidden="true">
+            <span class="l1">Cheka</span>
+            <span class="l2">BAR • CAFÉ</span>
+            <span class="l3">LUGGAGE STORAGE</span>
+          </span>
+          <p>A sophisticated, nature-inspired bar café — and a secure place to leave your luggage while you explore the city.</p>
+          <div class="socials">
+            <a data-social="instagram" href="#" aria-label="Cheka on Instagram"><span data-icon="instagram"></span></a>
+            <a data-social="facebook" href="#" aria-label="Cheka on Facebook"><span data-icon="facebook"></span></a>
+            <a data-social="tiktok" href="#" aria-label="Cheka on TikTok"><span data-icon="tiktok"></span></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#menu">Menu</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="index.html#gallery">Gallery</a></li>
+            <li><a href="luggage-storage.html">Luggage Storage</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><span data-field="address">Address coming soon</span></li>
+            <li><span data-field="phone-text">Phone number coming soon</span></li>
+            <li><a data-action="email" href="#">Email us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Opening Hours</h4>
+          <div class="contact__hours" data-field="hours" style="color:rgba(241,231,210,0.82)">
+            <div><span>Monday &ndash; Sunday</span><span>07:00 &ndash; 23:00</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <span>&copy; <span data-year>2026</span> Cheka Bar Café. All rights reserved.</span>
+        <span>BAR • CAFÉ &nbsp;·&nbsp; LUGGAGE STORAGE</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE QUICK-ACTION BAR -->
+  <nav class="quick-bar" aria-label="Quick actions">
+    <a class="quick-bar__btn" href="#luggage-contact" data-action="luggage-call">
+      <span data-icon="phone" aria-hidden="true"></span><span>Call</span>
+    </a>
+    <a class="quick-bar__btn" href="#luggage-contact" data-action="luggage-directions">
+      <span data-icon="directions" aria-hidden="true"></span><span>Directions</span>
+    </a>
+    <a class="quick-bar__btn" href="index.html#menu">
+      <span data-icon="list" aria-hidden="true"></span><span>Menu</span>
+    </a>
+    <a class="quick-bar__btn" href="#how-it-works">
+      <span data-icon="luggage" aria-hidden="true"></span><span>Luggage</span>
+    </a>
+  </nav>
+
+  <script src="js/data.js" defer></script>
+  <script src="js/script.js" defer></script>
+</body>
+</html>

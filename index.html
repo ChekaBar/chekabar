@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#1B3523" />
+
+  <!-- ===================== SEO / SOCIAL ============================ -->
+  <title>Cheka — Bar Café &amp; Secure Luggage Storage</title>
+  <meta name="description" content="Cheka is a sophisticated, nature-inspired bar café with specialty coffee, thoughtful drinks and secure luggage storage. You've found your place." />
+
+  <!-- TODO CHEKA: set the final domain, then update these two lines + js/data.js -> business.siteUrl -->
+  <link rel="canonical" href="https://example.github.io/cheka-website/" />
+  <meta property="og:url" content="https://example.github.io/cheka-website/" />
+
+  <meta property="og:type" content="business.business" />
+  <meta property="og:site_name" content="Cheka Bar Café" />
+  <meta property="og:title" content="Cheka — Bar Café &amp; Secure Luggage Storage" />
+  <meta property="og:description" content="Specialty coffee, thoughtful drinks, a calm nature-inspired room and secure luggage storage." />
+  <!-- TODO CHEKA: replace with a real 1200x630 photo -->
+  <meta property="og:image" content="images/og-image.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+
+  <!-- ===================== FONTS ================================== -->
+  <!-- Two families only. If they fail to load, system fallbacks in styles.css keep the page readable. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- ===================== STRUCTURED DATA ======================== -->
+  <!-- TODO CHEKA: replace every "REPLACE_" value with the real business
+       information (name, url, address, geo, phone, hours, price range,
+       social profile URLs, logo + image URLs). Do NOT add ratings/reviews. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    "name": "Cheka Bar Café",
+    "description": "Sophisticated, nature-inspired bar café with specialty coffee, drinks and secure luggage storage.",
+    "url": "https://example.github.io/cheka-website/",
+    "image": "https://example.github.io/cheka-website/images/og-image.svg",
+    "logo": "https://example.github.io/cheka-website/images/logo/cheka-logo.svg",
+    "servesCuisine": ["Coffee", "Drinks", "Light bites"],
+    "priceRange": "€€",
+    "telephone": "REPLACE_PHONE_E164",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "REPLACE_STREET",
+      "addressLocality": "REPLACE_CITY",
+      "addressCountry": "REPLACE_COUNTRY"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "REPLACE_LAT",
+      "longitude": "REPLACE_LNG"
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "07:00",
+      "closes": "23:00"
+    }],
+    "sameAs": [
+      "REPLACE_INSTAGRAM_URL",
+      "REPLACE_FACEBOOK_URL",
+      "REPLACE_TIKTOK_URL"
+    ],
+    "makesOffer": {
+      "@type": "Offer",
+      "name": "Luggage Storage",
+      "description": "Secure, staffed luggage storage inside Cheka Bar Café. Drop off and pick up during opening hours.",
+      "category": "Luggage Storage"
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============================================================ -->
+  <!-- HEADER                                                        -->
+  <!-- ============================================================ -->
+  <header class="site-header" id="top">
+    <div class="site-header__inner">
+      <a class="brand" href="#home" aria-label="Cheka — Bar Café — Luggage Storage, back to top">
+        <!-- TODO CHEKA: real logo file lives at images/logo/ — path is set in js/data.js -->
+        <img class="brand__img" data-logo alt="Cheka — Bar Café — Luggage Storage"
+             src="images/logo/cheka-logo.svg" width="360" height="150" />
+        <span class="brand__fallback" aria-hidden="true">
+          <span class="l1">Cheka</span>
+          <span class="l2">BAR • CAFÉ</span>
+          <span class="l3">LUGGAGE STORAGE</span>
+        </span>
+      </a>
+
+      <nav class="primary-nav" aria-label="Primary">
+        <ul class="primary-nav__list">
+          <li><a class="primary-nav__link" href="#home">Home</a></li>
+          <li><a class="primary-nav__link" href="#menu">Menu</a></li>
+          <li><a class="primary-nav__link" href="#about">About Us</a></li>
+          <li><a class="primary-nav__link" href="#gallery">Gallery</a></li>
+          <li><a class="primary-nav__link" href="luggage-storage.html">Luggage Storage</a></li>
+          <li><a class="primary-nav__link" href="#contact">Contact</a></li>
+        </ul>
+        <a class="btn btn--gold" href="#contact">Reserve a Table</a>
+      </nav>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile navigation overlay -->
+  <div class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+    <button class="mobile-nav__close" type="button" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <nav aria-label="Mobile primary">
+      <ul class="mobile-nav__list">
+        <li><a class="mobile-nav__link" href="#home">Home</a></li>
+        <li><a class="mobile-nav__link" href="#menu">Menu</a></li>
+        <li><a class="mobile-nav__link" href="#about">About Us</a></li>
+        <li><a class="mobile-nav__link" href="#gallery">Gallery</a></li>
+        <li><a class="mobile-nav__link" href="luggage-storage.html">Luggage Storage</a></li>
+        <li><a class="mobile-nav__link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-nav__cta">
+      <a class="btn btn--gold" href="#contact">Reserve a Table</a>
+    </div>
+    <p class="mobile-nav__meta" data-field="hours-short">Mon–Sun · 07:00 – 23:00</p>
+  </div>
+
+  <!-- Screen-reader live region for dynamic status (filters, tabs) -->
+  <div id="sr-status" class="visually-hidden" role="status" aria-live="polite"></div>
+
+  <main id="main">
+
+    <!-- ========================================================== -->
+    <!-- HERO                                                        -->
+    <!-- ========================================================== -->
+    <section class="hero" id="home">
+      <div class="hero__media">
+        <!-- Hero image is intentionally NOT lazy-loaded (it is the LCP element). -->
+        <!-- TODO CHEKA: replace with a real cinematic café-interior photo (~1920x1280). -->
+        <img class="hero__img" data-img="hero" src="images/hero/cheka-hero.svg"
+             alt="Cheka café interior — forest-green walls, natural wood, plants and warm pendant lighting"
+             width="1920" height="1280" fetchpriority="high" decoding="async" />
+      </div>
+      <div class="hero__overlay"></div>
+
+      <div class="hero__inner">
+        <div class="hero__content">
+          <p class="hero__label reveal">CHEKA · BAR CAFÉ · LUGGAGE STORAGE</p>
+          <h1 class="hero__title reveal">You&rsquo;ve found your place.</h1>
+          <p class="hero__copy reveal">A warm meeting point for good coffee, thoughtful drinks, relaxed moments and secure luggage storage.</p>
+          <div class="btn-row reveal">
+            <a class="btn btn--gold" href="#menu">View Menu</a>
+            <a class="btn btn--ghost" href="#about"><span>Discover Cheka</span></a>
+          </div>
+        </div>
+        <!-- restrained brand element, wide screens only -->
+        <img class="hero__brandmark" data-logo src="images/logo/cheka-logo.svg" alt="" aria-hidden="true" width="360" height="150" />
+      </div>
+
+      <a class="hero__scroll" href="#features" aria-label="Scroll down">
+        <span>Scroll</span>
+        <span aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- QUICK-FEATURE STRIP                                         -->
+    <!-- ========================================================== -->
+    <section class="features" id="features" aria-label="At a glance">
+      <div class="container container--wide">
+        <div class="features__grid" id="quick-features">
+          <!-- Built from js/data.js -> CHEKA.quickFeatures. Static fallback below. -->
+          <noscript>
+            <div class="feature"><span><span class="feature__title">SPECIALTY COFFEE</span><span class="feature__sub">Premium Quality</span></span></div>
+            <div class="feature"><span><span class="feature__title">NATURAL ATMOSPHERE</span><span class="feature__sub">Relax &amp; Enjoy</span></span></div>
+            <div class="feature"><span><span class="feature__title">FREE WI-FI</span><span class="feature__sub">Stay Connected</span></span></div>
+            <div class="feature"><span><span class="feature__title">LUGGAGE STORAGE</span><span class="feature__sub">Safe &amp; Secure</span></span></div>
+          </noscript>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- ABOUT                                                       -->
+    <!-- ========================================================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="about__grid">
+          <div class="about__media reveal">
+            <!-- TODO CHEKA: replace with a real café-interior photo (portrait, 4:5). -->
+            <img class="about__img-main" data-img="aboutMain" src="images/about/cheka-interior.svg"
+                 alt="The main room at Cheka with wooden tables and greenery" width="1400" height="1600" loading="lazy" decoding="async" />
+            <!-- TODO CHEKA: optional detail shot (square). -->
+            <img class="about__img-detail" data-img="aboutDetail" src="images/about/cheka-detail.svg"
+                 alt="A close detail of coffee and foliage at Cheka" width="1000" height="1000" loading="lazy" decoding="async" />
+          </div>
+          <div class="about__text reveal">
+            <p class="eyebrow">About Cheka</p>
+            <h2>More than just a café.</h2>
+            <p class="lead">Cheka is a place where nature, comfort and good company come together. We care about quality coffee, thoughtful drinks and creating an atmosphere where every guest can slow down and feel at home.</p>
+            <p class="about__note">Your comfort is our priority.</p>
+            <p class="btn-row" style="margin-top:2rem">
+              <a class="link-underline" href="#gallery">See the space &rarr;</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- MENU                                                        -->
+    <!-- ========================================================== -->
+    <section class="section section--alt" id="menu">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Taste &amp; Enjoy</p>
+          <h2>Our Menu</h2>
+          <p>Specialty coffee at the centre, with a short, seasonal list of drinks, food and desserts.</p>
+        </div>
+
+        <div class="menu__layout reveal">
+          <div class="menu__main">
+            <!-- Tabs + panels are generated from js/data.js -> CHEKA.menu -->
+            <!-- TODO CHEKA: edit real items, descriptions and prices in js/data.js -->
+            <div class="menu__tabs" id="menu-tabs" role="tablist" aria-label="Menu categories"></div>
+            <div id="menu-panels">
+              <noscript>
+                <p>Enable JavaScript to browse the interactive menu, or ask our team for today&rsquo;s list.</p>
+              </noscript>
+            </div>
+          </div>
+          <aside class="menu__aside">
+            <img class="menu__photo" id="menu-photo" data-img="menuCoffee" src="images/menu/coffee.svg"
+                 alt="Cheka specialty coffee" width="1200" height="1500" loading="lazy" decoding="async" />
+            <p class="menu__aside-caption" id="menu-photo-caption">Coffee</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- LUGGAGE STORAGE (home section)                              -->
+    <!-- ========================================================== -->
+    <section class="section luggage-home" id="luggage">
+      <div class="container">
+        <div class="luggage-home__grid">
+          <div class="luggage-home__media reveal">
+            <!-- TODO CHEKA: replace with a real photo of the luggage area (green + wood). -->
+            <img data-img="luggageSection" src="images/luggage/luggage-storage.svg"
+                 alt="Neatly stored luggage in a green and wood corner of Cheka" width="1600" height="1200" loading="lazy" decoding="async" />
+          </div>
+          <div class="luggage-home__text reveal on-dark">
+            <p class="eyebrow">Explore Freely</p>
+            <h2>Luggage Storage</h2>
+            <p class="luggage-home__subtitle">Travel light. Enjoy more.</p>
+            <p>Leave your luggage with us in a safe and welcoming environment while you explore the city or relax at Cheka Bar Café.</p>
+
+            <ul class="luggage-features" data-luggage-features aria-label="Luggage storage features"></ul>
+
+            <dl class="luggage-home__facts" data-luggage-facts aria-label="Luggage storage details"></dl>
+
+            <div class="btn-row">
+              <a class="btn btn--gold" href="luggage-storage.html">Store Your Luggage</a>
+              <a class="btn btn--ghost" href="#contact" data-action="directions"><span>Get Directions</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- EXPERIENCE                                                  -->
+    <!-- ========================================================== -->
+    <section class="experience" aria-label="The Cheka experience">
+      <div class="experience__bg" data-bg-img="experience"></div>
+      <div class="experience__overlay"></div>
+      <div class="experience__inner reveal">
+        <p class="eyebrow" style="justify-content:center">The Cheka Experience</p>
+        <p class="experience__title">Nature. Coffee. Moments.</p>
+        <p style="margin-inline:auto">Slow down for an hour. Meet a friend, order something good, and let the room do the rest. This is a place to feel at home.</p>
+      </div>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- GALLERY                                                     -->
+    <!-- ========================================================== -->
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">A Look Inside</p>
+          <h2>Gallery</h2>
+          <p>The room, the bar, the coffee and the corner where your luggage waits.</p>
+        </div>
+
+        <div class="gallery__filters reveal" id="gallery-filters" role="group" aria-label="Filter gallery by category"></div>
+
+        <div class="gallery__grid reveal" id="gallery-grid">
+          <noscript>
+            <p>Enable JavaScript to browse the photo gallery.</p>
+          </noscript>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- REVIEWS                                                     -->
+    <!-- ========================================================== -->
+    <section class="section section--alt" id="reviews">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <p class="eyebrow">Guest Stories</p>
+          <h2>What our guests say</h2>
+        </div>
+        <div class="reviews__grid reveal" id="reviews-grid"></div>
+        <!-- TODO CHEKA: replace sample reviews in js/data.js with real, permitted quotes. -->
+        <p class="reviews__disclaimer" style="text-align:center">
+          Sample guest stories shown for layout. Real reviews will appear here once collected.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- CONTACT                                                     -->
+    <!-- ========================================================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Visit Us</p>
+          <h2>Visit Cheka</h2>
+          <p>Come in for a coffee, book a table, or drop off your bags. We&rsquo;re open every day.</p>
+        </div>
+
+        <div class="contact__grid reveal">
+          <div class="contact__details">
+            <div class="contact__row">
+              <span class="contact__label">Address</span>
+              <!-- TODO CHEKA: real address is set in js/data.js -> business.address -->
+              <span class="contact__value is-pending" data-field="address">Address coming soon — Cheka Bar Café</span>
+            </div>
+            <div class="contact__row">
+              <span class="contact__label">Phone</span>
+              <!-- TODO CHEKA: real phone in js/data.js -> business.phone -->
+              <span class="contact__value is-pending" data-field="phone-text">Phone number coming soon</span>
+            </div>
+            <div class="contact__row">
+              <span class="contact__label">Email</span>
+              <span class="contact__value"><a data-action="email" href="#contact"><span data-field="email-text">hello@example.com</span></a></span>
+            </div>
+            <div class="contact__row">
+              <span class="contact__label">Opening Hours</span>
+              <div class="contact__hours" data-field="hours">
+                <div><span>Monday &ndash; Sunday</span><span>07:00 &ndash; 23:00</span></div>
+              </div>
+            </div>
+            <div class="contact__row">
+              <span class="contact__label">Follow</span>
+              <div class="socials">
+                <a data-social="instagram" href="#contact" aria-label="Cheka on Instagram"><span data-icon="instagram"></span></a>
+                <a data-social="facebook" href="#contact" aria-label="Cheka on Facebook"><span data-icon="facebook"></span></a>
+                <a data-social="tiktok" href="#contact" aria-label="Cheka on TikTok"><span data-icon="tiktok"></span></a>
+              </div>
+            </div>
+
+            <div class="btn-row">
+              <a class="btn" href="#contact" data-action="directions"><span>Get Directions</span></a>
+              <a class="btn btn--ghost" href="#contact" data-action="call"><span>Call Us</span></a>
+            </div>
+          </div>
+
+          <form class="contact__form" id="contact-form" novalidate>
+            <p class="form-note">
+              This form opens your email app with the message pre-filled — nothing is stored on this site.
+              <!-- TODO CHEKA: to collect messages automatically, connect a form service — see README. -->
+            </p>
+            <div class="field">
+              <label for="cf-name">Your name</label>
+              <input type="text" id="cf-name" name="name" autocomplete="name" required />
+              <span class="error-text" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="cf-email">Email</label>
+              <input type="email" id="cf-email" name="email" autocomplete="email" required />
+              <span class="error-text" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" rows="5" required></textarea>
+              <span class="error-text" aria-live="polite"></span>
+            </div>
+            <button class="btn btn--gold" type="submit">Send Message</button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+
+          <!-- Responsive map placeholder — replaced by a real embed when
+               js/data.js -> business.mapsEmbed is filled in. -->
+          <div class="contact__map" id="contact-map">
+            <div class="contact__map-placeholder">
+              <span data-icon="pin" aria-hidden="true"></span>
+              <strong>Map coming soon</strong>
+              <span>The Google Maps embed will appear here once the location is confirmed.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================ -->
+  <!-- FOOTER                                                        -->
+  <!-- ============================================================ -->
+  <footer class="site-footer">
+    <div class="container container--wide">
+      <div class="site-footer__grid">
+        <div class="footer-brand">
+          <img class="footer-brand__img" data-logo src="images/logo/cheka-logo.svg"
+               alt="Cheka — Bar Café — Luggage Storage" width="360" height="150" />
+          <span class="brand__fallback footer-brand__fallback" aria-hidden="true">
+            <span class="l1">Cheka</span>
+            <span class="l2">BAR • CAFÉ</span>
+            <span class="l3">LUGGAGE STORAGE</span>
+          </span>
+          <p>A sophisticated, nature-inspired bar café — and a secure place to leave your luggage while you explore the city.</p>
+          <div class="socials">
+            <a data-social="instagram" href="#" aria-label="Cheka on Instagram"><span data-icon="instagram"></span></a>
+            <a data-social="facebook" href="#" aria-label="Cheka on Facebook"><span data-icon="facebook"></span></a>
+            <a data-social="tiktok" href="#" aria-label="Cheka on TikTok"><span data-icon="tiktok"></span></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="luggage-storage.html">Luggage Storage</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><span data-field="address">Address coming soon</span></li>
+            <li><span data-field="phone-text">Phone number coming soon</span></li>
+            <li><a data-action="email" href="#">Email us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Opening Hours</h4>
+          <div class="contact__hours" data-field="hours" style="color:rgba(241,231,210,0.82)">
+            <div><span>Monday &ndash; Sunday</span><span>07:00 &ndash; 23:00</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <span>&copy; <span data-year>2026</span> Cheka Bar Café. All rights reserved.</span>
+        <span>BAR • CAFÉ &nbsp;·&nbsp; LUGGAGE STORAGE</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================ -->
+  <!-- MOBILE QUICK-ACTION BAR (hidden on desktop via CSS)          -->
+  <!-- ============================================================ -->
+  <nav class="quick-bar" aria-label="Quick actions">
+    <a class="quick-bar__btn" href="#contact" data-action="call">
+      <span data-icon="phone" aria-hidden="true"></span><span>Call</span>
+    </a>
+    <a class="quick-bar__btn" href="#contact" data-action="directions">
+      <span data-icon="directions" aria-hidden="true"></span><span>Directions</span>
+    </a>
+    <a class="quick-bar__btn" href="#menu">
+      <span data-icon="list" aria-hidden="true"></span><span>Menu</span>
+    </a>
+    <a class="quick-bar__btn" href="luggage-storage.html">
+      <span data-icon="luggage" aria-hidden="true"></span><span>Luggage</span>
+    </a>
+  </nav>
+
+  <!-- ============================================================ -->
+  <!-- LIGHTBOX                                                      -->
+  <!-- ============================================================ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+    <button class="lightbox__btn lightbox__close" type="button" aria-label="Close image viewer"><span data-icon="close"></span></button>
+    <button class="lightbox__btn lightbox__prev" type="button" aria-label="Previous image"><span data-icon="arrowLeft"></span></button>
+    <button class="lightbox__btn lightbox__next" type="button" aria-label="Next image"><span data-icon="arrowRight"></span></button>
+    <figure class="lightbox__figure">
+      <img class="lightbox__img" src="" alt="" />
+      <figcaption class="lightbox__caption"></figcaption>
+    </figure>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- SCRIPTS  (data first, then behaviour; both deferred)         -->
+  <!-- ============================================================ -->
+  <script src="js/data.js" defer></script>
+  <script src="js/script.js" defer></script>
+</body>
+</html>
