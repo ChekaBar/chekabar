@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" role="img" aria-label="Gallery — pastry counter">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1B3523"/>
+      <stop offset="0.55" stop-color="#132A1C"/>
+      <stop offset="1" stop-color="#0D1B12"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.7" cy="0.28" r="0.75">
+      <stop offset="0" stop-color="#C49A5A" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#C49A5A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="1500" fill="url(#bg)"/>
+  <rect width="1200" height="1500" fill="url(#glow)"/>
+  <g fill="none" stroke="#C49A5A" stroke-opacity="0.28" stroke-width="5" stroke-linecap="round">
+    <path d="M600 390 C 720 390, 756 750, 600 1170 C 444 750, 480 390, 600 390 Z"/>
+    <line x1="600" y1="390" x2="600" y2="1230"/>
+    <circle cx="600" cy="750" r="200" stroke-opacity="0.12"/>
+  </g>
+  <text x="60" y="1335" fill="#EFE5CF" font-family="Georgia, 'Times New Roman', serif" font-size="93" letter-spacing="4">CHEKA</text>
+  <text x="60" y="1425" fill="#C9C2AE" font-family="Arial, Helvetica, sans-serif" font-size="46" opacity="0.75">Gallery — pastry counter</text>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1000" role="img" aria-label="Luggage page hero — storage corner">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1B3523"/>
+      <stop offset="0.55" stop-color="#132A1C"/>
+      <stop offset="1" stop-color="#0D1B12"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.7" cy="0.28" r="0.75">
+      <stop offset="0" stop-color="#C49A5A" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#C49A5A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1920" height="1000" fill="url(#bg)"/>
+  <rect width="1920" height="1000" fill="url(#glow)"/>
+  <g fill="none" stroke="#7E963F" stroke-opacity="0.28" stroke-width="5" stroke-linecap="round">
+    <path d="M960 260 C 1152 260, 1209 500, 960 780 C 711 500, 768 260, 960 260 Z"/>
+    <line x1="960" y1="260" x2="960" y2="820"/>
+    <circle cx="960" cy="500" r="320" stroke-opacity="0.12"/>
+  </g>
+  <text x="96" y="890" fill="#EFE5CF" font-family="Georgia, 'Times New Roman', serif" font-size="62" letter-spacing="4">CHEKA</text>
+  <text x="96" y="950" fill="#C9C2AE" font-family="Arial, Helvetica, sans-serif" font-size="31" opacity="0.75">Luggage page hero — storage corner</text>
+</svg>

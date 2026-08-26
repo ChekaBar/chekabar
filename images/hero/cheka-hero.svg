@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1280" role="img" aria-label="Hero — café interior, forest green + wood + warm light">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1B3523"/>
+      <stop offset="0.55" stop-color="#132A1C"/>
+      <stop offset="1" stop-color="#0D1B12"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.7" cy="0.28" r="0.75">
+      <stop offset="0" stop-color="#C49A5A" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#C49A5A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1920" height="1280" fill="url(#bg)"/>
+  <rect width="1920" height="1280" fill="url(#glow)"/>
+  <g fill="none" stroke="#7E963F" stroke-opacity="0.28" stroke-width="5" stroke-linecap="round">
+    <path d="M960 332 C 1152 332, 1209 640, 960 998 C 711 640, 768 332, 960 332 Z"/>
+    <line x1="960" y1="332" x2="960" y2="1049"/>
+    <circle cx="960" cy="640" r="320" stroke-opacity="0.12"/>
+  </g>
+  <text x="96" y="1140" fill="#EFE5CF" font-family="Georgia, 'Times New Roman', serif" font-size="80" letter-spacing="4">CHEKA</text>
+  <text x="96" y="1216" fill="#C9C2AE" font-family="Arial, Helvetica, sans-serif" font-size="40" opacity="0.75">Hero — café interior, forest green + wood + warm light</text>
+</svg>

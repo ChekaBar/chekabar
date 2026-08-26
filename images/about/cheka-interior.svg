@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1600" role="img" aria-label="About — main café interior">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1B3523"/>
+      <stop offset="0.55" stop-color="#132A1C"/>
+      <stop offset="1" stop-color="#0D1B12"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.7" cy="0.28" r="0.75">
+      <stop offset="0" stop-color="#C49A5A" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#C49A5A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1400" height="1600" fill="url(#bg)"/>
+  <rect width="1400" height="1600" fill="url(#glow)"/>
+  <g fill="none" stroke="#7E963F" stroke-opacity="0.28" stroke-width="5" stroke-linecap="round">
+    <path d="M700 416 C 840 416, 882 800, 700 1248 C 518 800, 560 416, 700 416 Z"/>
+    <line x1="700" y1="416" x2="700" y2="1312"/>
+    <circle cx="700" cy="800" r="233" stroke-opacity="0.12"/>
+  </g>
+  <text x="70" y="1424" fill="#EFE5CF" font-family="Georgia, 'Times New Roman', serif" font-size="100" letter-spacing="4">CHEKA</text>
+  <text x="70" y="1520" fill="#C9C2AE" font-family="Arial, Helvetica, sans-serif" font-size="50" opacity="0.75">About — main café interior</text>
+</svg>

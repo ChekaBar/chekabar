@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200" role="img" aria-label="Luggage — bags in a green + wood Cheka setting">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1B3523"/>
+      <stop offset="0.55" stop-color="#132A1C"/>
+      <stop offset="1" stop-color="#0D1B12"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.7" cy="0.28" r="0.75">
+      <stop offset="0" stop-color="#C49A5A" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#C49A5A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="1200" fill="url(#bg)"/>
+  <rect width="1600" height="1200" fill="url(#glow)"/>
+  <g fill="none" stroke="#B17A47" stroke-opacity="0.28" stroke-width="5" stroke-linecap="round">
+    <path d="M800 312 C 960 312, 1008 600, 800 936 C 592 600, 640 312, 800 312 Z"/>
+    <line x1="800" y1="312" x2="800" y2="984"/>
+    <circle cx="800" cy="600" r="266" stroke-opacity="0.12"/>
+  </g>
+  <text x="80" y="1068" fill="#EFE5CF" font-family="Georgia, 'Times New Roman', serif" font-size="75" letter-spacing="4">CHEKA</text>
+  <text x="80" y="1140" fill="#C9C2AE" font-family="Arial, Helvetica, sans-serif" font-size="37" opacity="0.75">Luggage — bags in a green + wood Cheka setting</text>
+</svg>
