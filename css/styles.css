@@ -47,8 +47,8 @@
   --text-light:     #F1E7D2;
   --text-dark:      #182019;
   --muted-text:     #687168;
-  --red-accent:     #C0392B;   /* used for the .btn--red call-to-action */
-  --red-accent-dark:#9C2C20;
+  --yellow-accent:     #F1C40F;   /* used for the .btn--yellow call-to-action */
+  --yellow-accent-dark:#D4AC0D;
 
   /* --- Semantic surfaces --- */
   --bg-page:        var(--warm-white);
@@ -313,9 +313,9 @@ strong { font-weight: 700; }
 .btn--gold { --btn-bg: var(--gold-warm); --btn-bd: var(--gold-warm); --btn-fg: var(--forest-dark); }
 .btn--gold:hover { background: var(--wood-light); border-color: var(--wood-light); color: #fff; }
 
-/* Red call-to-action (used on the hero "View Menu" button) */
-.btn--red { --btn-bg: var(--red-accent); --btn-bd: var(--red-accent); --btn-fg: #fff; }
-.btn--red:hover { background: var(--red-accent-dark); border-color: var(--red-accent-dark); color: #fff; }
+/* Yellow call-to-action (used on the hero "View Menu" button) */
+.btn--yellow { --btn-bg: var(--yellow-accent); --btn-bd: var(--yellow-accent); --btn-fg: var(--forest-dark); }
+.btn--yellow:hover { background: var(--yellow-accent-dark); border-color: var(--yellow-accent-dark); color: var(--forest-dark); }
 
 .btn--ghost {
   --btn-bg: transparent;
