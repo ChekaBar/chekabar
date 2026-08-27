@@ -160,6 +160,17 @@
 
       <div class="hero__inner">
         <div class="hero__content">
+          <!-- Prominent brand logo. Above-the-fold: eager-loaded, explicit size,
+               async decoding. No fetchpriority so it never competes with the
+               hero background image (the LCP element). The dark-green square of
+               the artwork is feathered into the hero with a CSS mask; if the
+               image fails to load, the container keeps a matching dark-green
+               tile with a small brand mark (pure-CSS fallback). -->
+          <div class="hero__logo">
+            <img src="images/logo/cheka-main-logo.webp"
+                 alt="Cheka Bar Café and Luggage Storage logo"
+                 width="600" height="600" decoding="async" />
+          </div>
           <p class="hero__label reveal">CHEKA · BAR CAFÉ · LUGGAGE STORAGE</p>
           <h1 class="hero__title reveal">You&rsquo;ve found your place.</h1>
           <p class="hero__copy reveal">A warm meeting point for good coffee, thoughtful drinks, relaxed moments and secure luggage storage.</p>
@@ -168,8 +179,6 @@
             <a class="btn btn--ghost" href="#about"><span>Discover Cheka</span></a>
           </div>
         </div>
-        <!-- restrained brand element, wide screens only -->
-        <img class="hero__brandmark" data-logo src="images/logo/cheka-logo.svg" alt="" aria-hidden="true" width="360" height="150" />
       </div>
 
       <a class="hero__scroll" href="#features" aria-label="Scroll down">
