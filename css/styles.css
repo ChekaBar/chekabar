@@ -863,12 +863,6 @@ body.no-scroll { overflow: hidden; }
   color: var(--wood-dark);
   white-space: nowrap;
 }
-.menu__item-desc {
-  grid-column: 1 / -1;
-  font-size: 0.95rem;
-  color: var(--muted-text);
-  max-width: 52ch;
-}
 /* fade-in on category switch */
 .menu__panel.is-entering .menu__item {
   opacity: 0;

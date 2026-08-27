@@ -351,12 +351,11 @@
       if (i !== 0) panel.hidden = true;
 
       var list = el("div", { class: "menu__list" });
-      /* <!-- TODO CHEKA: real menu items & prices are edited in js/data.js -> CHEKA.menu --> */
+      /* Menu items (name + price only) are edited in js/data.js -> CHEKA.menu */
       (DATA.menu[key] || []).forEach(function (item) {
         list.appendChild(el("div", { class: "menu__item" },
           '<span class="menu__item-name">' + esc(item.name) + "</span>" +
-          '<span class="menu__item-price">' + esc(item.price) + "</span>" +
-          '<span class="menu__item-desc">' + esc(item.description) + "</span>"
+          '<span class="menu__item-price">' + esc(item.price) + "</span>"
         ));
       });
       panel.appendChild(list);
